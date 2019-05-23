@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/vcs.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Git and GitHub Project || By Caleb P, May 2019</h1>
+    <br><hr><br>
+    <a href="https://www.earthdatascience.org/workshops/intro-version-control-git/about-forks/"><img src="images/workflow.png" alt="Github workflow""></a>
+    <h3>Found from: https://www.earthdatascience.org/workshops/intro-version-control-git/about-forks/</h3>
+    <h3>Click on the image to go to original website</h3>
+    <br><hr><br>
+
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt update</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt install git</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git --version</pre>
+    <hr><br>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.name &quot;cjpearl41&quot;</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.email &quot;cjpearl41@gmail.com&quot;</pre>
+    <hr><br>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --list
+        user.name=cjpearl41
+        user.email=cjpearl41@gmail.com
+    </pre>
+    <hr><br>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp</b></font>$ git init</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp</b></font>$ git config --help</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ rm -rf .git</pre>
+    <hr><br>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ git add -A</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ git status
+        On branch master
+        
+        No commits yet
+        
+        Changes to be committed:
+          (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+        
+            <font color="#4E9A06">new file:   css/vcs.css</font>
+            <font color="#4E9A06">new file:   images/workflow.png</font>
+            <font color="#4E9A06">new file:   index.html</font>
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ git commit -m &quot;Initial Commit&quot;
+        [master (root-commit) 7a39b9b] Initial Commit
+         3 files changed, 37 insertions(+)
+         create mode 100644 css/vcs.css
+         create mode 100644 images/workflow.png
+         create mode 100644 index.html
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ git log
+        <font color="#C4A000">commit 7a39b9bd384170010018aa6610f3c94847dff0d9 (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>master</b></font><font color="#C4A000">)</font>
+        Author: cjpearl41 &lt;cjpearl41@gmail.com&gt;
+        Date:   Thu May 23 13:32:50 2019 -0600
+        
+            Initial Commit
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ kate .gitignore</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs</b></font>$ git reset
+        Unstaged changes after reset:
+        M	index.html
+    </pre>
+    <hr><br>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs/GitHubClones/mrm</b></font>$ mkdir GitHubClones</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/calebp/projects/vcs/GitHubClones/mrm</b></font>$ git clone https://github.com/CHS-McClendon/VCS_mrm.git mrm</pre>
+</body>
+</html>
