@@ -2,7 +2,18 @@ body{
     background-color: #007b80;
     text-align:center;
     color:#00eeff;
+    
+}
+h1{
+    font-family: 'Cute Font', cursive;
 }
 hr{
     color:#ff0000;
+}
+pre{
+    font-size: 15px;
+}
+table, th, td{
+    border: 3px solid red;
+    border-collapse: collapse;
 }
